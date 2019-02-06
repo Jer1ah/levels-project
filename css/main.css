@@ -1,0 +1,71 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.nav {
+  height: 10rem;
+}
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+  height: 100%;
+}
+.nav__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 13.5rem;
+}
+.nav__heading--icon {
+  width: 6.1rem;
+}
+.nav__heading h1 {
+  font-size: 2.6rem;
+}
+.nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.nav__list--item {
+  height: 100%;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  width: 14rem;
+  text-align: center;
+}
+.nav__list--item:nth-child(1), .nav__list--item:nth-child(2), .nav__list--item:nth-child(3) {
+  border-right: none;
+}
+.nav__list--item:hover {
+  background-color: #E85D5D;
+}
+.nav__list a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: gray;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.nav__list a:hover {
+  color: #f2f2f2;
+}
+
+.header {
+  background-color: lightgray;
+  height: 75rem;
+}
+
+/*# sourceMappingURL=main.css.map */
