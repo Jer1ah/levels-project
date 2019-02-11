@@ -7,11 +7,17 @@ html, body {
 
 .nav {
   height: 10rem;
+  position: fixed;
+  z-index: 101;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 6px 37px 0px #706c70;
 }
 .nav__container {
   display: flex;
   justify-content: space-between;
-  width: 75%;
+  width: 111rem;
+  max-width: 85%;
   margin: 0 auto;
   height: 100%;
 }
@@ -26,6 +32,7 @@ html, body {
 }
 .nav__heading h1 {
   font-size: 2.6rem;
+  margin: 0;
 }
 .nav__list {
   padding: 0;
@@ -64,8 +71,313 @@ html, body {
 }
 
 .header {
-  background-color: lightgray;
-  height: 75rem;
+  background: linear-gradient(rgba(100, 100, 100, 0.85), rgba(100, 100, 100, 0.85)), url("../../img/mountains.png");
+  background-size: cover;
+  padding: 0.1rem;
+  height: 63rem;
+}
+.header__form {
+  background-color: white;
+  height: 18.5rem;
+  width: 95rem;
+  margin: 25rem auto 2rem;
+  padding: 0.1rem;
+}
+.header__form--upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 92%;
+  margin: 3rem auto 1rem;
+}
+.header__form--upper .input__container {
+  width: 28.5rem;
+}
+.header__form--lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 92%;
+  margin: 0 auto 2rem;
+}
+.header__form--lower .input__container {
+  width: 22rem;
+}
+.header__form--lower button {
+  background-color: #E85D5D;
+  color: white;
+  display: block;
+  width: 17rem;
+  height: 4rem;
+  font-size: 1.3rem;
+  border: none;
+}
+.header__form--lower .input__container:nth-child(3) {
+  margin-right: 0;
+}
+.header__form--lower i {
+  width: 21.5% !important;
+}
+.header__form--info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 92%;
+  margin: 1rem auto 0;
+  font-size: 1.2rem;
+}
+.header__form--info p {
+  color: gray;
+}
+.header__form--info a {
+  color: #E85D5D;
+}
+.header__form .input__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 4rem;
+}
+.header__form .input__container i {
+  background-color: #E85D5D;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 15%;
+}
+.header__form .input__container img {
+  width: 2.5rem;
+}
+.header__form .input__container input {
+  height: 100%;
+  border: 1px solid lightgray;
+  border-left: none;
+  width: 85%;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+.header__form .input__container select {
+  height: 100%;
+  border: 1px solid lightgray;
+  background-color: inherit;
+  border-radius: 0;
+  -webkit-appearance: none;
+  border-left: none;
+  color: gray;
+  padding-left: 1rem;
+  width: 85%;
+  font-size: 1.2rem;
+}
+
+.help {
+  text-align: center;
+  background-color: #E85D5D;
+  color: white;
+  padding: 0.1rem;
+  clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+}
+.help h1 {
+  font-size: 4.7rem;
+  margin: 5rem auto 0;
+}
+.help p {
+  font-size: 1.7rem;
+  margin: 1.1rem auto 2.5rem;
+  color: #f2f2f2;
+}
+.help button {
+  border: 0.2rem solid white;
+  border-radius: none;
+  color: white;
+  font-size: 1.5rem;
+  background-color: inherit;
+  margin: 0 auto 7rem;
+  padding: 1rem 2rem;
+  transition: all 0.3s;
+}
+.help button:hover {
+  background-color: white;
+  color: #E85D5D;
+}
+
+.info__cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15rem 0 10rem;
+}
+.info__card {
+  text-align: center;
+  width: 33rem;
+  margin: 0 3.5rem;
+  transition: all 0.5s;
+}
+.info__card img {
+  width: 7.5rem;
+}
+.info__card h1 {
+  font-size: 2.2rem;
+  color: #E85D5D;
+}
+.info__card p {
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  color: gray;
+  margin: 1.5rem 0 2rem;
+}
+.info__card a {
+  text-decoration: none;
+  color: #E85D5D;
+  font-size: 1.6rem;
+}
+.info__card:hover {
+  cursor: pointer;
+}
+
+.portfolio {
+  padding: 10rem 0;
+  background-color: #f4f4f4;
+}
+.portfolio__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4rem;
+}
+.portfolio__card {
+  width: 35rem;
+  background-color: white;
+}
+.portfolio__card img {
+  width: 100%;
+}
+.portfolio__card h3 {
+  font-size: 1.9rem;
+  margin-left: 1.7rem;
+}
+.portfolio__card p {
+  color: gray;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  margin-left: 1.7rem;
+  width: 90%;
+  margin: 0 auto;
+}
+.portfolio__card button {
+  background-color: #E85D5D;
+  color: white;
+  font-size: 1.4rem;
+  width: 90%;
+  padding: 1.2rem 0;
+  display: block;
+  margin: 1.2rem auto 2.2rem;
+  border: none;
+}
+.portfolio__card:first-child {
+  margin-right: 1.5rem;
+}
+.portfolio__sidebar {
+  width: 35rem;
+  background-color: white;
+}
+.portfolio__sidebar--heading {
+  background-color: #E85D5D;
+  color: white;
+  padding: 0.1rem;
+}
+.portfolio__sidebar--heading h1 {
+  font-size: 1.9rem;
+  margin-top: 1.4rem;
+  margin-left: 1.7rem;
+  margin-bottom: 0.6rem;
+}
+.portfolio__sidebar--heading p {
+  font-size: 1.3rem;
+  margin-left: 1.7rem;
+  margin-top: 0;
+  color: #f2f2f2;
+}
+.portfolio__sidebar--list {
+  padding: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.1rem 0;
+}
+.portfolio__sidebar--item {
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  background-color: #f4f4f4;
+  justify-content: flex-start;
+  align-items: center;
+}
+.portfolio__sidebar--item img {
+  height: 8rem;
+  width: 8rem;
+}
+.portfolio__sidebar--item h2 {
+  margin: 0;
+  margin-left: 1.5rem;
+  font-size: 2.2rem;
+}
+
+.video {
+  height: 55rem;
+}
+.video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.blog {
+  background-color: #fcfcfc;
+  padding: 0.1rem;
+}
+.blog__list {
+  padding: 0;
+  width: 77rem;
+  padding: 1.3rem;
+  padding-left: 2rem;
+  border: 0.3rem #f2f2f2 solid;
+  border-radius: 0.5rem;
+  margin: 8rem auto 7rem;
+}
+.blog__list--item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 1.8rem 0;
+}
+.blog__list--item img {
+  height: 26rem;
+  width: 26rem;
+}
+.blog__list--item .rightFloat {
+  width: 43rem;
+  margin-left: 2.2rem;
+}
+.blog__list--item h3 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+.blog__list--item p {
+  color: gray;
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+}
+.blog__list--item a {
+  text-decoration: none;
+  color: #E85D5D;
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=main.css.map */

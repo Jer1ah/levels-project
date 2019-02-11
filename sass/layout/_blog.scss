@@ -1,0 +1,49 @@
+.blog {
+    background-color: darken(white, 1%);
+    padding: .1rem;
+
+    &__list {
+        padding: 0;
+        width: 77rem;
+        padding: 1.3rem;
+        padding-left: 2rem;
+        border: .3rem darken(white, 5%) solid;
+        border-radius: .5rem;
+        margin: 8rem auto 7rem;
+
+        &--item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            margin: 1.8rem 0;
+
+            img {
+                height: 26rem;
+                width: 26rem;
+            }
+
+            .rightFloat {
+                width: 43rem;
+                margin-left: 2.2rem;
+            }
+
+            h3 {
+                font-size: 2rem;
+                margin-top: 0;
+            }
+
+            p {
+                color: gray;
+                font-size: 1.5rem;
+                line-height: 2.7rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: #E85D5D;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Levels</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -26,22 +26,181 @@
     <header class="header">
         <form action="#" class="header__form">
             <div class="header__form--upper">
-                <input type="text">
-                <input type="date">
-                <input type="date">
+                <div class="input__container">
+                    <i><img src="img/marker.svg" alt="Marker Icon"></i>
+                    <input type="text" placeholder="Type Your Destination...">
+                </div>
+                <div class="input__container">
+                    <i><img src="img/calendar.svg" alt="Marker Icon"></i>
+                    <input type="text" placeholder="Check in">
+                </div>
+                <div class="input__container">
+                    <i><img src="img/calendar.svg" alt="Marker Icon"></i>
+                    <input type="text" placeholder="Check out">
+                </div>
             </div> <!-- .header__form-upper end -->
             <div class="header__form--lower">
-                <input type="text">
-                <input type="text">
-                <input type="text">
+                <div class="input__container">
+                    <i><img src="img/user.svg" alt="User Icon"></i>
+                    <select>
+                        <option value="Adult">Adult</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div> <!-- .input__container end -->
+                <div class="input__container">
+                    <i><img src="img/user.svg" alt="User Icon"></i>
+                    <select>
+                        <option value="Adult">Children</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div> <!-- .input__container end -->
+                <div class="input__container">
+                    <i><img src="img/bed.svg" alt="Bed Icon"></i>
+                    <select>
+                        <option value="Adult">Room</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div> <!-- .input__container end -->
                 <button>Check Availability</button>
             </div> <!-- .header__form-lower end -->
             <div class="header__form--info">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#">Need Help?</a>
-            </div>
+            </div> <!-- .header__form-info end -->
         </form>
     </header> <!-- .header end -->
+    <div class="help">
+        <h1>We are here to help you?</h1>
+        <p>Subscribe to get our newsletters</p>
+        <button>Subscribe to Newsletters</button>
+    </div> <!-- .help end -->
+    <div class="info">
+        <div class="info__cardContainer">
+            <div class="info__card">
+                <img src="img/hammer.svg" alt="Hammer Icon">
+                <h1>Pellentesque accumsan arcu nec dolor tempus</h1>
+                <p>Pellentesque at velit ante. Duis scelerisque metus vel felis porttitor gravida. Donec at felis libero. Mauris odio tortor.</p>
+                <a href="#">Continue Reading...</a>
+            </div> <!-- .info__card end -->
+            <div class="info__card">
+                <img src="img/plane.svg" alt="Plane Icon">
+                <h1>Duis scelerisque metus vel felis porttitor</h1>
+                <p>Pellentesque at velit ante. Duis scelerisque metus vel felis porttitor gravida. Donec at felis libero. Mauris odio tortor.</p>
+                <a href="#">Continue Reading...</a>
+            </div> <!-- .info__card end -->
+            <div class="info__card">
+                <img src="img/life-ring.svg" alt="Life Ring Icon">
+                <h1>Etiam aliquam arcu at mauris consectetur</h1>
+                <p>Pellentesque at velit ante. Duis scelerisque metus vel felis porttitor gravida. Donec at felis libero. Mauris odio tortor.</p>
+                <a href="#">Continue Reading...</a>
+            </div> <!-- .info__card end -->
+        </div> <!-- .info__cardContainer -->
+    </div> <!-- .info end -->
+    <div class="portfolio">
+        <div class="portfolio__container">
+            <div class="portfolio__main">
+                <div class="portfolio__card">
+                    <img src="img/mountains.png" alt="Neighborhood Image">
+                    <h3>Pellentesque accumsan arcu nec dolor tempus</h3>
+                    <p>Etiam aliquam arcu at mauris consectetur scelerisque. Integer elementum justo in orci facilisis ultricies. Pellentesque at velit ante. Duis scelerisque metus vel felis porttitor gravida.</p>
+                    <button>More Info</button>
+                </div> <!-- .portfolio__card end -->
+                <div class="portfolio__card">
+                    <img src="img/mountains.png" alt="Neighborhood Image">
+                    <h3>Pellentesque accumsan arcu nec dolor tempus</h3>
+                    <p>Etiam aliquam arcu at mauris consectetur scelerisque. Integer elementum justo in orci facilisis ultricies. Pellentesque at velit ante. Duis scelerisque metus vel felis porttitor gravida.</p>
+                    <button>More Info</button>
+                </div> <!-- .portfolio__card end -->
+            </div> <!-- .portfolio__main end -->
+            <div class="portfolio__sidebar">
+                <div class="portfolio__sidebar--heading">
+                    <h1>Recommended Places</h1>
+                    <p>Enamel pin cliche tilde, kitsch and VHS thundercats</p>
+                </div> <!-- .portfolio__sidebar-heading end -->
+                <ul class="portfolio__sidebar--list">
+                    <li class="portfolio__sidebar--item">
+                        <img src="img/mountains.png" alt="Image">
+                        <h2>Europe</h2>
+                    </li>
+                    <li class="portfolio__sidebar--item">
+                        <img src="img/mountains.png" alt="Image">
+                        <h2>Europe</h2>
+                    </li>
+                    <li class="portfolio__sidebar--item">
+                        <img src="img/mountains.png" alt="Image">
+                        <h2>Europe</h2>
+                    </li>
+                    <li class="portfolio__sidebar--item">
+                        <img src="img/mountains.png" alt="Image">
+                        <h2>Europe</h2>
+                    </li>
+                </ul> <!-- .portfolio__sidebar-list end -->
+            </div> <!-- .portfolio__sidebar end -->
+        </div> <!-- .portfolio__container end -->
+    </div> <!-- .portfolio end -->
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/TdpBRZ0dZhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div> <!-- .video end -->
+    <div class="blog">
+        <ul class="blog__list">
+            <li class="blog__list--item">
+                <img src="img/mountains.png" alt="Image">
+                <div class="rightFloat">
+                    <h3>Suspendisse vel est libero sem phasellus ac laoreet</h3>
+                    <p>Integer libero purus, consectetur vitae posuere quis, maximus id diam. Vivamus eget tellus ornare, sollicitudin quam id, dictum nulla. Phasellus finibus rhoncus justo, tempus eleifend neque dictum ac. Aenean metus leo, consectetur non. </p>
+                    <a href="#">Continue Reading..</a>
+                </div>
+            </li>
+            <li class="blog__list--item">
+                <img src="img/mountains.png" alt="Image">
+                <div class="rightFloat">
+                    <h3>Suspendisse vel est libero sem phasellus ac laoreet</h3>
+                    <p>Integer libero purus, consectetur vitae posuere quis, maximus id diam. Vivamus eget tellus ornare, sollicitudin quam id, dictum nulla. Phasellus finibus rhoncus justo, tempus eleifend neque dictum ac. Aenean metus leo, consectetur non. </p>
+                    <a href="#">Continue Reading..</a>
+                </div>
+            </li>
+            <li class="blog__list--item">
+                <img src="img/mountains.png" alt="Image">
+                <div class="rightFloat">
+                    <h3>Suspendisse vel est libero sem phasellus ac laoreet</h3>
+                    <p>Integer libero purus, consectetur vitae posuere quis, maximus id diam. Vivamus eget tellus ornare, sollicitudin quam id, dictum nulla. Phasellus finibus rhoncus justo, tempus eleifend neque dictum ac. Aenean metus leo, consectetur non. </p>
+                    <a href="#">Continue Reading..</a>
+                </div>
+            </li>
+        </ul> <!-- .blog__list end -->
+    </div> <!-- .blog end -->
+    <div class="contact">
+        <div class="contact__main">
+            
+        </div> <!-- .contact__main end -->
+    </div> <!-- .contact end -->
 <script src="js/main.js"></script>
 </body>
 </html>

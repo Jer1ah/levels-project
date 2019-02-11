@@ -1,4 +1,116 @@
 .header {
-    background-color: lightgray;
-    height: 75rem;
+    background: linear-gradient(rgba(100, 100, 100, .85), rgba(100, 100, 100, .85)),
+                url("../../img/mountains.png");
+    background-size: cover;
+    padding: .1rem;
+    height: 63rem;
+
+    &__form {
+        background-color: white;
+        height: 18.5rem;
+        width: 95rem;
+        margin: 25rem auto 2rem;
+        padding: .1rem;
+
+        &--upper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 92%;
+            margin: 3rem auto 1rem;
+
+            .input__container {
+                width: 28.5rem;
+            }
+        }
+
+        &--lower {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 92%;
+            margin: 0 auto 2rem;
+
+            .input__container {
+                width: 22rem;
+            }
+
+            button {
+                background-color: #E85D5D;
+                color: white;
+                display: block;
+                width: 17rem;
+                height: 4rem;
+                font-size: 1.3rem;
+                border: none;
+            }
+
+            .input__container:nth-child(3) {
+                margin-right: 0;
+            }
+
+            i {
+                width: 21.5% !important;
+            }
+        }
+
+        &--info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 92%;
+            margin: 1rem auto 0;
+            font-size: 1.2rem;
+
+            p {
+                color: gray;
+            }
+
+            a {
+                color: #E85D5D;
+            }
+        }
+
+        .input__container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 4rem;
+
+            i {
+                background-color: #E85D5D;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 15%;
+            }
+
+            img {
+                width: 2.5rem;
+            }
+
+            input {
+                height: 100%;
+                border: 1px solid lightgray;
+                border-left: none;
+                width: 85%;
+                font-size: 1.2rem;
+                padding-left: 1rem;
+            }
+
+            select {
+                height: 100%;
+                border: 1px solid lightgray;
+                background-color: inherit;
+                border-radius: 0;
+                -webkit-appearance: none;
+                border-left: none;
+                color: gray;
+                padding-left: 1rem;
+                width: 85%;
+                font-size: 1.2rem;
+            }
+        }
+    }
 }

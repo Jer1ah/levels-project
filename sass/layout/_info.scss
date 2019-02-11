@@ -1,0 +1,42 @@
+.info {
+
+    &__cardContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15rem 0 10rem;
+    }
+
+    &__card {
+        text-align: center;
+        width: 33rem;
+        margin: 0 3.5rem;
+        transition: all .5s;
+
+        img {
+            width: 7.5rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #E85D5D;
+        }
+
+        p {
+            font-size: 1.5rem;
+            line-height: 2.3rem;
+            color: gray;
+            margin: 1.5rem 0 2rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #E85D5D;
+            font-size: 1.6rem
+        }
+    }
+
+    &__card:hover {
+        cursor: pointer;
+    }
+}
