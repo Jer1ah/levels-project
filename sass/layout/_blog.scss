@@ -1,15 +1,38 @@
 .blog {
-    background-color: darken(white, 1%);
     padding: .1rem;
 
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 105rem;
+        margin: 8rem auto 9rem;
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        h1 {
+            font-size: 5.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            color: #E85D5D;
+            margin: 0;
+            font-size: 2.9rem;
+        }
+    }
+
     &__list {
-        padding: 0;
         width: 77rem;
         padding: 1.3rem;
         padding-left: 2rem;
         border: .3rem darken(white, 5%) solid;
         border-radius: .5rem;
-        margin: 8rem auto 7rem;
 
         &--item {
             display: flex;
@@ -43,6 +66,82 @@
                 text-decoration: none;
                 color: #E85D5D;
                 font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+
+@media( max-width: 1160px ) {
+    .blog {
+        &__container {
+            width: 90%;
+        }
+    }
+}
+
+@media( max-width: 1025px ) {
+    .blog {
+        &__container {
+            flex-direction: column;
+            width: 77%;
+        }
+
+        &__heading {
+            align-self: flex-start;
+            margin-bottom: 2rem;
+            margin-left: .5rem;
+        }
+
+        &__list {
+           width: 100%;
+        }
+    }
+}
+
+@media( max-width: 850px ) {
+    .blog {
+        &__container {
+            width: 90%;
+        }
+    }
+}
+
+@media( max-width: 690px ) {
+    .blog {
+        &__list {
+
+            &--item {
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin: 5rem 0;
+
+                img {
+                    width: 100%;
+                }
+
+                h3 {
+                    width: 100%;
+                    margin: 1rem 0;
+                }
+
+                p {
+                    width: 100%;
+                }
+            }
+
+            &--item:first-child {
+                margin-top: 2rem;
+            }
+
+            &--item:last-child {
+                margin-bottom: 2rem;
+            }
+
+            .rightFloat {
+                width: auto;
+                margin: 0;
             }
         }
     }

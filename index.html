@@ -21,12 +21,16 @@
                 <li class="nav__list--item"><a href="#">Blog Entries</a></li>
                 <li class="nav__list--item"><a href="#">Contact Us</a></li>
             </ul> <!-- .nav__list end -->
+            <div class="mobileMenu">
+                <h3>Menu</h3>
+                <img src="img/menu.svg" alt="Menu Icon">
+            </div>
         </div> <!-- .nav__container end -->
     </nav> <!-- .nav end -->
     <header class="header">
         <form action="#" class="header__form">
             <div class="header__form--upper">
-                <div class="input__container">
+                <div class="input__container top__input">
                     <i><img src="img/marker.svg" alt="Marker Icon"></i>
                     <input type="text" placeholder="Type Your Destination...">
                 </div>
@@ -169,38 +173,58 @@
         <iframe src="https://www.youtube.com/embed/TdpBRZ0dZhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div> <!-- .video end -->
     <div class="blog">
-        <ul class="blog__list">
-            <li class="blog__list--item">
-                <img src="img/mountains.png" alt="Image">
-                <div class="rightFloat">
-                    <h3>Suspendisse vel est libero sem phasellus ac laoreet</h3>
-                    <p>Integer libero purus, consectetur vitae posuere quis, maximus id diam. Vivamus eget tellus ornare, sollicitudin quam id, dictum nulla. Phasellus finibus rhoncus justo, tempus eleifend neque dictum ac. Aenean metus leo, consectetur non. </p>
-                    <a href="#">Continue Reading..</a>
-                </div>
-            </li>
-            <li class="blog__list--item">
-                <img src="img/mountains.png" alt="Image">
-                <div class="rightFloat">
-                    <h3>Suspendisse vel est libero sem phasellus ac laoreet</h3>
-                    <p>Integer libero purus, consectetur vitae posuere quis, maximus id diam. Vivamus eget tellus ornare, sollicitudin quam id, dictum nulla. Phasellus finibus rhoncus justo, tempus eleifend neque dictum ac. Aenean metus leo, consectetur non. </p>
-                    <a href="#">Continue Reading..</a>
-                </div>
-            </li>
-            <li class="blog__list--item">
-                <img src="img/mountains.png" alt="Image">
-                <div class="rightFloat">
-                    <h3>Suspendisse vel est libero sem phasellus ac laoreet</h3>
-                    <p>Integer libero purus, consectetur vitae posuere quis, maximus id diam. Vivamus eget tellus ornare, sollicitudin quam id, dictum nulla. Phasellus finibus rhoncus justo, tempus eleifend neque dictum ac. Aenean metus leo, consectetur non. </p>
-                    <a href="#">Continue Reading..</a>
-                </div>
-            </li>
-        </ul> <!-- .blog__list end -->
+        <div class="blog__container">
+            <div class="blog__heading">
+                <h1>Asia</h1>
+                <h3>Singapore</h3>
+            </div> <!-- .blog__heading end -->
+            <ul class="blog__list">
+                <li class="blog__list--item">
+                    <img src="img/mountains.png" alt="Image">
+                    <div class="rightFloat">
+                        <h3>Suspendisse vel est libero sem phasellus ac laoreet</h3>
+                        <p>Integer libero purus, consectetur vitae posuere quis, maximus id diam. Vivamus eget tellus ornare, sollicitudin quam id, dictum nulla. Phasellus finibus rhoncus justo, tempus eleifend neque dictum ac. Aenean metus leo, consectetur non. </p>
+                        <a href="#">Continue Reading..</a>
+                    </div>
+                </li>
+                <li class="blog__list--item">
+                    <img src="img/mountains.png" alt="Image">
+                    <div class="rightFloat">
+                        <h3>Suspendisse vel est libero sem phasellus ac laoreet</h3>
+                        <p>Integer libero purus, consectetur vitae posuere quis, maximus id diam. Vivamus eget tellus ornare, sollicitudin quam id, dictum nulla. Phasellus finibus rhoncus justo, tempus eleifend neque dictum ac. Aenean metus leo, consectetur non. </p>
+                        <a href="#">Continue Reading..</a>
+                    </div>
+                </li>
+                <li class="blog__list--item">
+                    <img src="img/mountains.png" alt="Image">
+                    <div class="rightFloat">
+                        <h3>Suspendisse vel est libero sem phasellus ac laoreet</h3>
+                        <p>Integer libero purus, consectetur vitae posuere quis, maximus id diam. Vivamus eget tellus ornare, sollicitudin quam id, dictum nulla. Phasellus finibus rhoncus justo, tempus eleifend neque dictum ac. Aenean metus leo, consectetur non. </p>
+                        <a href="#">Continue Reading..</a>
+                    </div>
+                </li>
+            </ul> <!-- .blog__list end -->
+        </div> <!-- .blog__container end -->
     </div> <!-- .blog end -->
     <div class="contact">
-        <div class="contact__main">
-            
-        </div> <!-- .contact__main end -->
+        <div class="contact__wrapper">
+            <img src="img/maps.png" alt="Google Maps Image">
+            <form action="#" class="contact__form">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Subject">
+                <textarea name="Text">Message</textarea>
+                <button>Send Message Now</button>
+            </form>
+        </div> <!-- .contact__wrapper -->
     </div> <!-- .contact end -->
+    <footer class="footer">
+        <span>Copyright &copy; 2019 Jeriah Bowers</span>
+    </footer>
+<script
+ src="https://code.jquery.com/jquery-3.3.1.min.js"
+ integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+ crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

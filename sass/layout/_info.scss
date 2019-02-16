@@ -40,3 +40,18 @@
         cursor: pointer;
     }
 }
+
+
+@media( max-width: 775px ) {
+    .info {
+        &__cardContainer {
+            flex-direction: column;
+            margin-top: 7rem;
+        }
+
+        &__card {
+            width: 73%;
+            margin: 4.5rem auto;
+        }
+    }
+}

@@ -107,3 +107,46 @@
         }
     }
 }
+
+
+@media( max-width: 1145px ) {
+    .portfolio {
+        &__container {
+            flex-direction: column;
+            width: 80%;
+            margin: auto;
+        }
+
+        &__card {
+            width: 49%;
+            margin: 0;
+        }
+
+        &__sidebar {
+            width: 100%;
+            margin-top: 2.5rem;
+        }
+
+        &__main {
+            width: 100%;
+            justify-content: space-between;
+            margin: 0;
+        }
+    }
+}
+
+@media( max-width: 615px ) {
+    .portfolio {
+        &__main {
+            flex-direction: column;
+        }
+
+        &__card {
+            width: 100%;
+        }
+
+        &__card:first-child {
+            margin: 2rem 0;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+.contact {
+    clip-path: polygon(50% 11%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+    background: linear-gradient(rgba(43, 71, 71, .8), rgba(43, 71, 71, .8)),
+                url("../../img/mountains.png");
+    background-size: cover;
+    padding: .1rem;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15rem 0 6rem;
+
+        img {
+            height: 50rem;
+            width: 65rem;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 45rem;
+        height: 50rem;
+        background-color: darken(white, 1%);
+        margin-left: 2.5rem;
+
+        input {
+            width: 90%;
+            height: 4.5rem;
+            margin-top: 2rem;
+            background-color: darken(white, 7%);
+            border: none;
+            font-size: 1.4rem;
+            padding-left: 1rem;
+        }
+
+        input:first-child {
+            margin-top: 3rem;
+        }
+
+        textarea {
+            width: 90%;
+            height: 18rem;
+            margin-top: 2rem;
+            background-color: darken(white, 7%);
+            border: none;
+            padding-left: 1rem;
+            font-size: 1.4rem;
+            padding-top: 1.7rem;
+        }
+
+        button {
+            width: 90%;
+            height: 4.5rem;
+            border: none;
+            color: white;
+            background-color: #E85D5D;
+            font-size: 1.4rem;
+            margin-top: 2rem;
+        }
+    }
+}
+
+
+@media( max-width: 1150px ) {
+    .contact {
+        img {
+            width: 45rem;
+        }
+    }
+}
+
+@media( max-width: 965px ) {
+    .contact {
+        &__form {
+            width: 37rem;
+        }
+
+        img {
+            width: 37rem;
+        }
+    }
+}
+
+@media( max-width: 805px ) {
+    .contact {
+    
+    &__wrapper {
+        flex-direction: column;
+            img {
+                width: 65rem;
+                max-width: 90%;
+            }
+        }
+        &__form {
+            width: 65rem;
+            max-width: 90%;
+            margin-left: 0;
+            margin-top: 2rem;
+        }
+    }
+}

@@ -12,14 +12,34 @@ html, body {
   width: 100%;
   background-color: white;
   box-shadow: 0px 6px 37px 0px #706c70;
+  transition: all 0.2s;
 }
 .nav__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 111rem;
   max-width: 85%;
   margin: 0 auto;
   height: 100%;
+}
+.nav .mobileMenu {
+  font-size: 1.2rem;
+  color: #E85D5D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+  position: relative;
+}
+.nav .mobileMenu img {
+  height: 3.3rem;
+}
+.nav .mobileMenu h3 {
+  margin: 0 0.6rem 0 0;
+}
+.nav .mobileMenu:hover {
+  cursor: pointer;
 }
 .nav__heading {
   display: flex;
@@ -70,6 +90,40 @@ html, body {
   color: #f2f2f2;
 }
 
+@media (max-width: 990px) {
+  .nav {
+    height: 7rem;
+  }
+  .nav__list {
+    flex-direction: column;
+    position: absolute;
+    top: 6.4rem;
+    right: 7rem;
+    border: 0.2rem solid #cdcdcd;
+    height: auto;
+    display: none;
+  }
+  .nav__list--item {
+    background-color: white;
+    height: 4.7rem;
+    border: none;
+  }
+}
+@media (max-width: 760px) {
+  .nav__list {
+    right: 6rem;
+  }
+}
+@media (max-width: 600px) {
+  .nav__list {
+    right: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .nav__list {
+    right: 4rem;
+  }
+}
 .header {
   background: linear-gradient(rgba(100, 100, 100, 0.85), rgba(100, 100, 100, 0.85)), url("../../img/mountains.png");
   background-size: cover;
@@ -170,6 +224,103 @@ html, body {
   font-size: 1.2rem;
 }
 
+@media (max-width: 970px) {
+  .header__form {
+    height: auto;
+    width: 55rem;
+    margin-top: 17rem;
+  }
+  .header__form--upper {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .header__form--upper .input__container {
+    width: 45%;
+    margin: 0.7rem;
+  }
+  .header__form--upper .input__container i {
+    width: 21.5%;
+  }
+  .header__form--upper .top__input {
+    width: 100%;
+  }
+  .header__form--upper .top__input i {
+    width: 10%;
+    margin: 0 auto;
+  }
+  .header__form--upper .top__input input {
+    margin-left: -1.2rem;
+    margin-right: 1.2rem;
+  }
+  .header__form--lower {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header__form--lower .input__container {
+    width: 45%;
+    margin: 0.7rem;
+  }
+  .header__form--lower button {
+    width: 45%;
+    margin: 0.7rem;
+    margin-left: 1.4rem;
+  }
+  .header__form--info {
+    margin-bottom: 1.3rem;
+  }
+}
+@media (max-width: 530px) {
+  .header {
+    height: auto;
+  }
+
+  .header__form {
+    max-width: 95%;
+    margin: 15rem auto 7rem;
+  }
+  .header__form--upper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__form--upper .input__container {
+    width: 100%;
+  }
+  .header__form--upper .input__container i {
+    width: 20%;
+    margin: 0;
+  }
+  .header__form--upper .input__container input {
+    width: 90%;
+  }
+  .header__form--upper .top__input input {
+    margin: 0;
+  }
+  .header__form--lower {
+    flex-direction: column;
+    margin: auto;
+  }
+  .header__form--lower .input__container {
+    width: 100%;
+  }
+  .header__form--lower .input__container i {
+    width: 5%;
+  }
+  .header__form--lower .input__container select {
+    width: 95%;
+  }
+  .header__form--lower button {
+    width: 100%;
+  }
+  .header__form .input__container:nth-child(3) {
+    margin-right: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .header__form--info p {
+    width: 25rem;
+  }
+}
 .help {
   text-align: center;
   background-color: #E85D5D;
@@ -235,6 +386,16 @@ html, body {
   cursor: pointer;
 }
 
+@media (max-width: 775px) {
+  .info__cardContainer {
+    flex-direction: column;
+    margin-top: 7rem;
+  }
+  .info__card {
+    width: 73%;
+    margin: 4.5rem auto;
+  }
+}
 .portfolio {
   padding: 10rem 0;
   background-color: #f4f4f4;
@@ -329,6 +490,37 @@ html, body {
   font-size: 2.2rem;
 }
 
+@media (max-width: 1145px) {
+  .portfolio__container {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+  .portfolio__card {
+    width: 49%;
+    margin: 0;
+  }
+  .portfolio__sidebar {
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+  .portfolio__main {
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+  }
+}
+@media (max-width: 615px) {
+  .portfolio__main {
+    flex-direction: column;
+  }
+  .portfolio__card {
+    width: 100%;
+  }
+  .portfolio__card:first-child {
+    margin: 2rem 0;
+  }
+}
 .video {
   height: 55rem;
 }
@@ -338,17 +530,36 @@ html, body {
 }
 
 .blog {
-  background-color: #fcfcfc;
   padding: 0.1rem;
 }
+.blog__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 105rem;
+  margin: 8rem auto 9rem;
+}
+.blog__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.blog__heading h1 {
+  font-size: 5.5rem;
+  margin-bottom: 1rem;
+}
+.blog__heading h3 {
+  color: #E85D5D;
+  margin: 0;
+  font-size: 2.9rem;
+}
 .blog__list {
-  padding: 0;
   width: 77rem;
   padding: 1.3rem;
   padding-left: 2rem;
   border: 0.3rem #f2f2f2 solid;
   border-radius: 0.5rem;
-  margin: 8rem auto 7rem;
 }
 .blog__list--item {
   display: flex;
@@ -378,6 +589,158 @@ html, body {
   text-decoration: none;
   color: #E85D5D;
   font-size: 1.6rem;
+}
+
+@media (max-width: 1160px) {
+  .blog__container {
+    width: 90%;
+  }
+}
+@media (max-width: 1025px) {
+  .blog__container {
+    flex-direction: column;
+    width: 77%;
+  }
+  .blog__heading {
+    align-self: flex-start;
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
+  }
+  .blog__list {
+    width: 100%;
+  }
+}
+@media (max-width: 850px) {
+  .blog__container {
+    width: 90%;
+  }
+}
+@media (max-width: 690px) {
+  .blog__list--item {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 5rem 0;
+  }
+  .blog__list--item img {
+    width: 100%;
+  }
+  .blog__list--item h3 {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .blog__list--item p {
+    width: 100%;
+  }
+  .blog__list--item:first-child {
+    margin-top: 2rem;
+  }
+  .blog__list--item:last-child {
+    margin-bottom: 2rem;
+  }
+  .blog__list .rightFloat {
+    width: auto;
+    margin: 0;
+  }
+}
+.contact {
+  clip-path: polygon(50% 11%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+  background: linear-gradient(rgba(43, 71, 71, 0.8), rgba(43, 71, 71, 0.8)), url("../../img/mountains.png");
+  background-size: cover;
+  padding: 0.1rem;
+}
+.contact__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15rem 0 6rem;
+}
+.contact__wrapper img {
+  height: 50rem;
+  width: 65rem;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 45rem;
+  height: 50rem;
+  background-color: #fcfcfc;
+  margin-left: 2.5rem;
+}
+.contact__form input {
+  width: 90%;
+  height: 4.5rem;
+  margin-top: 2rem;
+  background-color: #ededed;
+  border: none;
+  font-size: 1.4rem;
+  padding-left: 1rem;
+}
+.contact__form input:first-child {
+  margin-top: 3rem;
+}
+.contact__form textarea {
+  width: 90%;
+  height: 18rem;
+  margin-top: 2rem;
+  background-color: #ededed;
+  border: none;
+  padding-left: 1rem;
+  font-size: 1.4rem;
+  padding-top: 1.7rem;
+}
+.contact__form button {
+  width: 90%;
+  height: 4.5rem;
+  border: none;
+  color: white;
+  background-color: #E85D5D;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1150px) {
+  .contact img {
+    width: 45rem;
+  }
+}
+@media (max-width: 965px) {
+  .contact__form {
+    width: 37rem;
+  }
+  .contact img {
+    width: 37rem;
+  }
+}
+@media (max-width: 805px) {
+  .contact__wrapper {
+    flex-direction: column;
+  }
+  .contact__wrapper img {
+    width: 65rem;
+    max-width: 90%;
+  }
+  .contact__form {
+    width: 65rem;
+    max-width: 90%;
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
+.footer {
+  height: 7rem;
+  background-color: #2B4760;
+  padding: 0.1rem;
+  text-align: center;
+  margin-top: -0.5rem;
+}
+.footer span {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-top: 2.5rem;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

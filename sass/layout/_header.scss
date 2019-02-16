@@ -114,3 +114,129 @@
         }
     }
 }
+
+
+@media( max-width: 970px ) {
+    .header__form {
+        height: auto;
+        width: 55rem;
+        margin-top: 17rem;
+
+        &--upper {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 0;
+
+            .input__container {
+                width: 45%;
+                margin: .7rem;
+
+                i {
+                    width: 21.5%;
+                }
+            }
+
+            .top__input {
+                width: 100%;
+
+                i {
+                    width: 10%;
+                    margin: 0 auto;
+                }
+
+                input {
+                    margin-left: -1.2rem;
+                    margin-right: 1.2rem;
+                }
+            }
+        }
+
+        &--lower {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .input__container {
+                width: 45%;
+                margin: .7rem;
+            }
+
+            button {
+                width: 45%;
+                margin: .7rem;
+                margin-left: 1.4rem;
+            }
+        }
+
+        &--info {
+            margin-bottom: 1.3rem;
+        }
+    }
+}
+
+@media( max-width: 530px ) {
+
+    .header {
+        height: auto;
+    }
+    
+    .header__form {
+        max-width: 95%;
+        margin: 15rem auto 7rem;
+
+        &--upper {
+            flex-direction: column;
+            align-items: center;
+
+            .input__container {
+                width: 100%;
+
+                i {
+                    width: 20%;
+                    margin: 0;
+                }
+
+                input {
+                    width: 90%;
+                }
+            }
+
+            .top__input {
+
+                input {
+                    margin: 0;
+                }
+            }
+        }
+
+        &--lower {
+            flex-direction: column; 
+            margin: auto;
+
+            .input__container {
+                width: 100%;
+
+                i {
+                    width: 5%;
+                }
+
+                select {
+                    width: 95%;
+                }
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+
+        .input__container:nth-child(3) {
+            margin-right: .5rem;
+        }
+    }
+}
+
+@media( max-width: 480px ) {
+    .header__form--info p {
+        width: 25rem;
+    }
+}
